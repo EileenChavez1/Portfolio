@@ -12,7 +12,7 @@ File Name: styles.css
   padding: 0;
 }
 
-/* Body styles - earthy tones */
+/* Body style */
 body {
   font-family: Arial, sans-serif;
   background-color: #e6ddd3; /* light clay/beige */
@@ -96,18 +96,3 @@ footer {
   color: #7a6a53;
 }
 
-/* Responsive layout for mobile */
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
-
-  .column {
-    flex: 1 1 100%;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
