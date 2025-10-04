@@ -1,0 +1,113 @@
+/*
+Author: Eileen Hernandez Chavez
+Date: 9/23/2025
+File Name: styles.css
+*/
+
+/* Optional for layout debugging */
+* {
+  /* outline: 1px solid red; */ /* Uncomment only for debugging */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles - earthy tones */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6ddd3; /* light clay/beige */
+  color: #3a4a3f; /* dark sage green */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #6a5d46; /* clay brown */
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #d6c8b4; /* soft warm brown */
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+nav a {
+  color: #3a4a3f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #a5886a; /* lighter brown on hover */
+  text-decoration: underline;
+}
+
+/* Main content layout - responsive two columns */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Column styles */
+.column {
+  flex: 1 1 45%;
+  background-color: #c1b8aa; /* muted sage/gray-beige */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Images in content */
+.content-image,
+.column img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7a6a53;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 1 1 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
